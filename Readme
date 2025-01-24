@@ -1,0 +1,111 @@
+# Medicure - Online Doctor Appointment System
+
+**Medicure** is a comprehensive web application designed to streamline doctor appointment bookings. Built using the **MERN stack**, it offers separate functionalities for admins, doctors, and general users, ensuring an efficient and intuitive experience.
+
+---
+
+## Key Features
+
+- **For Users:**
+  - Create an account or log in.
+  - View all doctors and their availability.
+  - Explore additional sections like About and Contact.
+
+- **For Doctors:**
+  - Manage appointments and schedules through a dedicated dashboard.
+  - Dashboard displays:
+    - Latest bookings
+    - Total earnings
+    - Total appointments
+    - Patient details
+  - Update and manage personal details in the profile section.
+
+- **For Admins:**
+  - Access an admin panel to manage:
+    - Appointments
+    - Doctor lists
+    - Add new doctors
+
+- **Image Storage:**
+  - Integrated with **Cloudinary** for secure and efficient image hosting and management.
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose
+- **Image Storage:** Cloudinary
+- **Environment Management:** `.env` files
+
+---
+
+## Project Structure
+
+```
+medicure/
+│
+├── admin/        # Admin panel for managing users and appointments
+├── backend/      # Backend server with APIs and database connection
+├── frontend/     # User-facing application for booking appointments
+```
+
+---
+
+## Quick Start
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/medicure.git
+   cd medicure
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   cd admin && npm install
+   cd ../backend && npm install
+   cd ../frontend && npm install
+   ```
+
+3. **Set up environment variables:**
+
+   - Each folder includes an `env.example` file. Use it to create `.env` files:
+
+     ```bash
+     cp env.example .env
+     ```
+
+4. **Run the servers:**
+
+   - **Backend:**
+     ```bash
+     cd backend
+     npm start
+     ```
+   - **Frontend:**
+     ```bash
+     cd frontend
+     npm start
+     ```
+   - **Admin Panel:**
+     ```bash
+     cd admin
+     npm start
+     ```
+
+---
+
+## Usage
+
+- **Frontend**: Accessible at `http://localhost:3000`
+- **Admin Panel**: Accessible at `http://localhost:3001`
+- **Backend API**: Accessible at `http://localhost:4000`
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
