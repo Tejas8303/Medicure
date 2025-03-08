@@ -28,7 +28,7 @@ const Navbar = () => {
         {/* Only show the Admin button when not logged in */}
         {!token && (
           <a
-            href="http://localhost:5174/admin"
+            href="https://medicure-admin.onrender.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-white font-medium border border-gray-500 rounded-full py-2 px-4 ml-3 transition duration-200 ease-in-out hover:bg-gray-700"
