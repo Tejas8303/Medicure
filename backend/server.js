@@ -31,7 +31,7 @@ app.use(
   cors({
     origin: ["https://medicure-frontend-elvv.onrender.com","https://medicure-admin.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization","atoken"],
   })
 );
 
