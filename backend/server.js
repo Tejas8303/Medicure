@@ -29,7 +29,7 @@ connectCloudinary().catch((error) => {
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://medicure-frontend-elvv.onrender.com", 
+    origin: ["https://medicure-frontend-elvv.onrender.com","https://medicure-admin.onrender.com"]
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
