@@ -27,7 +27,13 @@ connectCloudinary().catch((error) => {
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://Medicure-frontend.onrender.com", 
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 // API endpoints
 app.use("/api/admin", adminRouter);
