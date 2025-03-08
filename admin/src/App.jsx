@@ -22,8 +22,7 @@ function App() {
     <div className="bg-[#F8F9FD]">
       <ToastContainer />
       <Navbar />
-      <div className="flex w-full min-h-screen">
-
+      <div className="flex max min-h-screen">
           <Sidebar />
         <Routes>
           {/*Admin route */}

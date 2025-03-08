@@ -76,13 +76,14 @@ function AddDoctor() {
   };
 
   return (
-    <form onSubmit={onSubmitHandler} className="m-5 w-full">
+
+    <form onSubmit={onSubmitHandler} className="mx-2 md:m-5 w-full">
       <p className="mb-3 text-lg font-medium">Add Doctor</p>
-      <div className="bg-white px-8 py-8 border rounded w-full max-w-4xl max-h-[80vh] overflow-y-scroll">
-        <div className="flex items-center gap-4 mb-8 text-gray-500">
+      <div className="bg-white px-4 md:px-8 py-6 md:py-8 border rounded max-w-4xl  overflow-y-auto">
+        <div className="flex items-center gap-4 mb-6 md:mb-8 text-gray-500">
           <label htmlFor="doc-img">
             <img
-              className="w-16 bg-gray-100 rounded-full cursor-pointer"
+              className="w-12 md:w-16 bg-gray-100 rounded-full cursor-pointer"
               src={docImg ? URL.createObjectURL(docImg) : assets.upload_area}
               alt=""
             />
@@ -93,18 +94,20 @@ function AddDoctor() {
             id="doc-img"
             hidden
           />
-          <p>
+          <p className="text-sm md:text-base">
             Upload doctor <br /> Picture
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-start gap-10 text-gray-600">
-          <div className="w-full lg:flex-1 flex flex-col gap-4 ">
+
+        <div className="flex flex-col lg:flex-row items-start gap-5 md:gap-10 text-gray-600">
+          {/* Left Column */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-3 md:gap-4">
             <div className="flex-1 flex flex-col gap-1">
-              <p>Doctor Name</p>
+              <p className="text-sm md:text-base">Doctor Name</p>
               <input
                 onChange={(e) => setName(e.target.value)}
                 value={name}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="text"
                 placeholder="Name"
                 required
@@ -112,11 +115,11 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <p>Doctor Email</p>
+              <p className="text-sm md:text-base">Doctor Email</p>
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="email"
                 placeholder="Email"
                 required
@@ -124,11 +127,11 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <p>Doctor Password</p>
+              <p className="text-sm md:text-base">Doctor Password</p>
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="password"
                 placeholder="Password"
                 required
@@ -136,12 +139,12 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <label htmlFor="experience">Experience</label>
+              <label htmlFor="experience" className="text-sm md:text-base">Experience</label>
               <select
-                id="experience" 
+                id="experience"
                 onChange={(e) => setExperience(e.target.value)}
                 value={experience}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
               >
                 <option value="1 Year">1 Year</option>
                 <option value="2 Year">2 Year</option>
@@ -155,27 +158,29 @@ function AddDoctor() {
                 <option value="10 Year">10 Year</option>
               </select>
             </div>
+
             <div className="flex-1 flex flex-col gap-1">
-              <p>Fees</p>
+              <p className="text-sm md:text-base">Fees</p>
               <input
                 onChange={(e) => setFees(e.target.value)}
                 value={fees}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="number"
-                placeholder="fees"
+                placeholder="Fees"
                 required
               />
             </div>
           </div>
 
-          <div className="w-full lg:flex-1 flex flex-col gap-4">
+          {/* Right Column */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-3 md:gap-4">
             <div className="flex-1 flex flex-col gap-1">
-              <label htmlFor="speciality">Speciality</label>
+              <label htmlFor="speciality" className="text-sm md:text-base">Speciality</label>
               <select
                 id="speciality"
                 onChange={(e) => setSpeciality(e.target.value)}
                 value={speciality}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
               >
                 <option value="General physician">General physician</option>
                 <option value="Gynecologist">Gynecologist</option>
@@ -187,11 +192,11 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <p>Education</p>
+              <p className="text-sm md:text-base">Education</p>
               <input
                 onChange={(e) => setDegree(e.target.value)}
                 value={degree}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="text"
                 placeholder="Education"
                 required
@@ -199,21 +204,21 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <p>Address</p>
+              <p className="text-sm md:text-base">Address</p>
               <input
                 onChange={(e) => setAddress1(e.target.value)}
                 value={address1}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full mb-2"
                 type="text"
-                placeholder="address 1"
+                placeholder="Address Line 1"
                 required
               />
               <input
                 onChange={(e) => setAddress2(e.target.value)}
                 value={address2}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 text-sm md:text-base w-full"
                 type="text"
-                placeholder="address 2"
+                placeholder="Address Line 2"
                 required
               />
             </div>
@@ -221,18 +226,19 @@ function AddDoctor() {
         </div>
 
         <div>
-          <p className="mt-4 mb-2">About Doctor</p>
+          <p className="mt-4 mb-2 text-sm md:text-base">About Doctor</p>
           <textarea
             onChange={(e) => setAbout(e.target.value)}
             value={about}
-            className="w-full px-4 pt-2 border rounded"
+            className="w-full px-3 py-2 border rounded text-sm md:text-base"
             type="text"
             placeholder="Write about Doctor"
             rows={5}
             required
           ></textarea>
         </div>
-        <button className="bg-primary px-10 py-3 mt-4 text-white rounded-full">
+
+        <button className="bg-primary px-6 md:px-10 py-2 md:py-3 mt-4 text-white rounded-full text-sm md:text-base w-full md:w-auto">
           Add Doctor
         </button>
       </div>
