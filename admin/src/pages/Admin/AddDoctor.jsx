@@ -136,13 +136,12 @@ function AddDoctor() {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-              <p>Experience</p>
+              <label htmlFor="experience">Experience</label>
               <select
+                id="experience" 
                 onChange={(e) => setExperience(e.target.value)}
                 value={experience}
                 className="border rounded px-3 py-2"
-                name=""
-                id=""
               >
                 <option value="1 Year">1 Year</option>
                 <option value="2 Year">2 Year</option>
@@ -171,13 +170,12 @@ function AddDoctor() {
 
           <div className="w-full lg:flex-1 flex flex-col gap-4">
             <div className="flex-1 flex flex-col gap-1">
-              <p>Speciality</p>
+              <label htmlFor="speciality">Speciality</label>
               <select
+                id="speciality"
                 onChange={(e) => setSpeciality(e.target.value)}
                 value={speciality}
                 className="border rounded px-3 py-2"
-                name=""
-                id=""
               >
                 <option value="General physician">General physician</option>
                 <option value="Gynecologist">Gynecologist</option>
@@ -187,6 +185,7 @@ function AddDoctor() {
                 <option value="Gastroenterologist">Gastroenterologist</option>
               </select>
             </div>
+
             <div className="flex-1 flex flex-col gap-1">
               <p>Education</p>
               <input
