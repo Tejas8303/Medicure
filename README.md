@@ -126,12 +126,6 @@ Update `.env` files with your credentials:
 
 ---
 
-## 📸 Screenshots
-
-_Add your app screenshots here for better presentation (e.g., homepage, doctor dashboard, admin panel)._  
-
----
-
 ## 🤝 Contribution
 
 Contributions are always welcome!  
