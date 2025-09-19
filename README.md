@@ -1,0 +1,161 @@
+# 🏥 Medicure - Online Doctor Appointment System
+
+**Medicure** is a full-stack web application built with the **MERN stack** to streamline doctor appointment bookings.  
+It provides dedicated dashboards for **Admins**, **Doctors**, and **Users**, ensuring a seamless and efficient healthcare experience.
+
+---
+
+## 🌐 Live Demo
+
+- **Medicure (User Website):** [Frontend App](https://medicure-frontend-elvv.onrender.com)  
+- **Doctor & Admin Panel:** [Admin Dashboard](https://medicure-admin.onrender.com)  
+- **Backend API:** [API Server](https://medicure-backend-v2do.onrender.com)
+
+---
+
+## ✨ Features
+
+### 👩‍⚕️ For Users
+- Register or log in to your account.
+- Browse doctors and check availability.
+- Book and manage appointments.
+- Access additional pages such as **About** and **Contact**.
+
+### 🩺 For Doctors
+- Manage appointments and patient schedules via a dedicated dashboard.
+- Dashboard includes:
+  - Latest bookings
+  - Total earnings
+  - Total appointments
+  - Patient details
+- Update and manage personal profile information.
+
+### 🛠️ For Admins
+- Manage the platform via a dedicated **Admin Panel**:
+  - Approve and manage doctor accounts
+  - View and manage appointments
+  - Add or remove doctors
+
+### 📦 Other Features
+- **Cloudinary Integration** for image storage and management.
+- **Responsive Design** using Tailwind CSS.
+- **Role-based Authentication** for Admins, Doctors, and Users.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB with Mongoose  
+- **Image Hosting:** Cloudinary  
+- **Authentication:** JWT (JSON Web Token)  
+- **Environment Management:** `.env` files  
+
+---
+
+## 📂 Project Structure
+
+```
+medicure/
+│
+├── admin/        # Admin panel (Doctors & Admin Dashboard)
+├── backend/      # Backend server with APIs & MongoDB connection
+├── frontend/     # User-facing website for booking appointments
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/medicure.git
+cd medicure
+```
+
+### 2️⃣ Install dependencies
+```bash
+cd admin && npm install
+cd ../backend && npm install
+cd ../frontend && npm install
+```
+
+### 3️⃣ Setup environment variables
+Each folder contains an `env.example` file. Copy and configure it:
+```bash
+cp env.example .env
+```
+
+Update `.env` files with your credentials:
+
+- **Backend**:
+  - `MONGO_URI`
+  - `JWT_SECRET`
+  - `CLOUDINARY_NAME`
+  - `CLOUDINARY_API_KEY`
+  - `CLOUDINARY_API_SECRET`
+
+- **Frontend & Admin**:
+  - `VITE_API_URL=http://localhost:4000`
+
+### 4️⃣ Run the servers
+- **Backend** (Port: `4000`):
+  ```bash
+  cd backend
+  npm start
+  ```
+- **Frontend** (Port: `3000`):
+  ```bash
+  cd frontend
+  npm start
+  ```
+- **Admin Panel** (Port: `3001`):
+  ```bash
+  cd admin
+  npm start
+  ```
+
+---
+
+## 🔗 Access
+
+- **Frontend:** `http://localhost:3000`  
+- **Admin Panel:** `http://localhost:3001`  
+- **Backend API:** `http://localhost:4000`  
+
+---
+
+## 📸 Screenshots
+
+_Add your app screenshots here for better presentation (e.g., homepage, doctor dashboard, admin panel)._  
+
+---
+
+## 🤝 Contribution
+
+Contributions are always welcome!  
+
+1. Fork the project  
+2. Create a feature branch (`git checkout -b feature-name`)  
+3. Commit your changes (`git commit -m "Add new feature"`)  
+4. Push to the branch (`git push origin feature-name`)  
+5. Open a Pull Request  
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).  
+
+---
+
+## 🙌 Acknowledgements
+
+- [React](https://reactjs.org/)  
+- [Node.js](https://nodejs.org/)  
+- [MongoDB](https://www.mongodb.com/)  
+- [Cloudinary](https://cloudinary.com/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+
+---
