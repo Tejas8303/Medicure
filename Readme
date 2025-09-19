@@ -1,9 +1,5 @@
 # 🏥 Medicure - Online Doctor Appointment System
 
-![MERN Stack](https://img.shields.io/badge/MERN-FullStack-green)  
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)  
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)  
-
 **Medicure** is a full-stack web application built with the **MERN stack** to streamline doctor appointment bookings.  
 It provides dedicated dashboards for **Admins**, **Doctors**, and **Users**, ensuring a seamless and efficient healthcare experience.
 
